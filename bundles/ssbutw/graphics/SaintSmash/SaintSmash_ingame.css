@@ -82,3 +82,21 @@ body{
     left: 50%;
     top: 968px
 }
+
+.progressPlaque{
+    position: absolute;
+    right: 0;
+    top: 115px;
+}
+
+.progressPlaque > *{
+    float: left;
+    display: block;
+}
+
+.progressPlaque #progress{
+    min-width: 200px;
+    line-height: 31px;
+    background: url(Plaque2.png) repeat-x;
+    padding: 0 10px;
+}
