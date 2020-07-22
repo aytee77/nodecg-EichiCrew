@@ -1,0 +1,84 @@
+html{
+    background: url(../testSmashFooty.png) no-repeat;
+    color: white;
+    font-family: "Futura md bt";
+    width: 1920px;
+    height: 1080px;
+}
+body{
+    position: relative;
+    margin: 0;
+}
+#p1Box{
+    position: absolute;
+    left: 361px;
+    top: 946px;
+}
+#p2Box{
+    position: absolute;
+    left: 1101px;
+    top: 946px;
+}
+
+.scoreBox{
+    font-family: "Futura mdCd bt";
+    font-size: 132px;
+    line-height: 121px;
+    width: 55px;
+    height: 121px;
+    box-sizing: border-box;
+    padding: 0px 0 0 2px;
+
+    transform: rotate(-27deg);
+
+    -moz-box-shadow:    inset -9px 0px 32px -14px black;
+    -webkit-box-shadow: inset -9px 0px 32px -14px black;
+    box-shadow:         inset -9px 0px 32px -14px black;
+}
+    #p1Box .scoreBox{
+        background-color: #e01c33;
+    }
+    #p2Box .scoreBox{
+        background-color: #3e7fcb;
+    }
+
+.plaque{
+    position: absolute;
+    top: 54px;
+    left: 112px;
+    height: 31px;
+    width: 650px;
+}
+
+.plaque .plaque1{
+    display: block;
+    float: left;
+    width: 61px;
+    height: 31px;
+}
+.plaque .plaqueColor{
+    display: block;
+    float: left;
+    width: 5px;
+    height: 31px;
+}
+.plaque .playername{
+    display: block;
+    float: left;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 31px;
+    height: 31px;
+    background: url(Plaque2.png) repeat-x;
+    padding: 0 5px 0 0;
+    min-width: 170px;
+}
+
+.logo{
+    width: 129px;
+    position: absolute;
+    margin-left: -65px;
+    left: 50%;
+    top: 968px
+}

@@ -1,79 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
+    <link rel="stylesheet" href="SaintSmash/fonts.css" />
+    <link rel="stylesheet" href="SaintSmash/SaintSmash_ingame.css" />
 
-      html{
-        background: url(testSmashFooty.png) no-repeat;
-        color: white;
-      }
-
-
-      #p1Box{
-        position: absolute;
-        left: 361px;
-        top: 946px;
-      }
-      .scoreBox{
-        width: 55px;
-        height: 121px;
-        transform: rotate(-27deg);
-
-        -moz-box-shadow:    inset -9px 0px 32px -14px black;
-        -webkit-box-shadow: inset -9px 0px 32px -14px black;
-        box-shadow:         inset -9px 0px 32px -14px black;
-      }
-        #p1Box .scoreBox{
-          background-color: #e01c33;
-        }
-        #p2Box .scoreBox{
-          background-color: #3e7fcb;
-        }
-
-
-      #player1name{
-        position: absolute;
-        top: 54px;
-        left: 112px;
-        background: url(SaintSmash/P1_Plaque.png) no-repeat;
-        height: 31px;
-        min-width: 305px;
-        padding: 4px 0 0 70px;
-      }
-    </style>
   </head>
 <body>
   <div id="p1Box">
     <div class="scoreBox">
         <span id="player1score"></span>
     </div>
-
-      <span id="player1name"></span>
-
+    <div class="plaque">
+      <img class="plaque1" src="SaintSmash/Plaque1.png">
+      <div class="playername">
+        <span id="player1name"></span>
+      </div>
+      </span>
+      <img class="plaqueColor" src="SaintSmash/PlaqueRed.png">
+    </div>
   </div>
-  <div id="event"></div>
+
+  <img src="SaintSmash/Logo.png" class="logo" alt="Saint Smash" />
+
+  <div id="p2Box">
+    <div class="scoreBox">
+        <span id="player2score"></span>
+    </div>
+    <div class="plaque">
+      <img class="plaque1" src="SaintSmash/Plaque1.png">
+      <div class="playername">
+        <span id="player2name"></span>
+      </div>
+      </span>
+      <img class="plaqueColor" src="SaintSmash/PlaqueBlue.png">
+    </div>
+  </div>
+
+  <div id="progress"></div>
   
-  
-  <div id="player1twitter"></div>
-  <div id="player1country"></div>
-  <div id="player2name"></div>
-  <div id="player2score"></div>
-  <div id="player2twitter"></div>
-  <div id="player2country"></div>
+
   <script>
     var tournament;
     nodecg.Replicant('tournament').on('change', (newValue, oldValue) => {
       // update tournament value here
       tournament = newValue;
-      document.getElementById('event').innerText = tournament.event;
+      document.getElementById('progress').innerText = tournament.progress;
       document.getElementById('player1name').innerText = tournament.player[0].displayName;
       document.getElementById('player2name').innerText = tournament.player[1].displayName;
       document.getElementById('player1score').innerText = tournament.player[0].score;
       document.getElementById('player2score').innerText = tournament.player[1].score;
-      document.getElementById('player1twitter').innerText = tournament.player[0].twitter;
-      document.getElementById('player2twitter').innerText = tournament.player[1].twitter;
-      document.getElementById('player1country').innerText = tournament.player[0].country;
-      document.getElementById('player2country').innerText = tournament.player[1].country;
     });
   </script>
 </body>
