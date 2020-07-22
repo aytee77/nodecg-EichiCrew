@@ -70,7 +70,8 @@ body{
     font-style: italic;
     line-height: 31px;
     height: 31px;
-    background: url(Plaque2.png) repeat-x;
+    /*background: url(Plaque2.png) repeat-x;*/
+    background-color: #2c2d2c;
     padding: 0 5px 0 0;
     min-width: 170px;
 }
@@ -97,6 +98,7 @@ body{
 .progressPlaque #progress{
     min-width: 200px;
     line-height: 31px;
-    background: url(Plaque2.png) repeat-x;
+    /*background: url(Plaque2.png) repeat-x;*/
+    background-color: #2c2d2c;
     padding: 0 10px;
 }
