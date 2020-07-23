@@ -47,6 +47,12 @@
     ],
     "graphics": [
       {
+        "file": "SaintSmash_ingame.html",
+        "width": 1280,
+        "height": 720,
+        "singleInstance": false
+      },
+      {
         "file": "UMEBURA-light.html",
         "width": 1280,
         "height": 720,
