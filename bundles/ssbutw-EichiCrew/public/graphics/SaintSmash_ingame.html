@@ -51,6 +51,11 @@
       document.getElementById('player2name').innerText = tournament.player[1].displayName;
       document.getElementById('player1score').innerText = tournament.player[0].score;
       document.getElementById('player2score').innerText = tournament.player[1].score;
+      if(!tournament.progress){
+        document.getElementById('progress').parentElement.classList.add("hide");
+      }else{
+        document.getElementById('progress').parentElement.classList.remove("hide");
+      }
     });
   </script>
 </body>
