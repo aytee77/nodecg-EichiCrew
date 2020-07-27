@@ -169,12 +169,12 @@ export default {
   methods: {
     urlRegexTest(url) {
       /* eslint no-useless-escape: 0 */
-      const regex = new RegExp('https?:\/\/smash\.gg\/tournament\/([-a-zA-Z0-9]*)\/events\/([-a-zA-Z0-9]*)');
+      const regex = new RegExp('https?:\/\/smash\.gg\/tournament\/([-a-zA-Z0-9]*)\/event\/([-a-zA-Z0-9]*)');
       return regex.test(url);
     },
     getSmashggPhase(url) {
       /* eslint no-useless-escape: 0 */
-      const regex = new RegExp('https?:\/\/smash\.gg\/tournament\/([-a-zA-Z0-9]*)\/events\/([-a-zA-Z0-9]*)');
+      const regex = new RegExp('https?:\/\/smash\.gg\/tournament\/([-a-zA-Z0-9]*)\/event\/([-a-zA-Z0-9]*)');
       const regexArr = regex.exec(url);
       if ((!regexArr) || (regexArr.length !== 3)) {
         return;

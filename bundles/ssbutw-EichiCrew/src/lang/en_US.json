@@ -22,7 +22,7 @@
     "tournament_challonge_id": "Import Players from @:(game.tournament)",
     "tournament_smashgg_slug": "Import Brackets from @:(game.tournament)",
     "tournament_challonge_ex": "EX： URL:'https://challonge.com/hirosuma12' @:(game.tournament) ID:'hirosuma12'。",
-    "tournament_smashgg_ex": "EX: 'https://smash.gg/tournament/genesis-6/events/smash-for-switch-singles/'",
+    "tournament_smashgg_ex": "EX: 'https://smash.gg/tournament/genesis-6/event/smash-for-switch-singles/'",
     "tournament_import": "Import this @:(game.tournament)",
     "tournament_list": "@:(game.tournament) List",
     "my_tournament": "Import from my @:(import.tournament_list)",
