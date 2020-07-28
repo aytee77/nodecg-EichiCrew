@@ -28,7 +28,7 @@ export const REP_PLAYERDB_DEFAULT = {
 export const REP_PLAYERLIST_DEFAULT = ['Zackray', 'Nairo'];
 
 export const REP_SETTING_DEFAULT = {
-  lang: 'zh_Hant_TW',
+  lang: 'en_US',
   chkey: null,
   sggkey: null,
 };
@@ -40,6 +40,13 @@ export const REP_TOURNAMENT_DEFAULT = {
   final: 0,
   bo: 3,
   playerCount: 2,
+  caster: [{
+    displayName: '',
+  },
+  {
+    displayName: '',
+  },
+  ],
   player: [{
     displayName: '',
     country: null,

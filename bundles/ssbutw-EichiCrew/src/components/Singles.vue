@@ -89,11 +89,13 @@
       </v-layout>
     </v-flex>
     <StockIcon :Rep="Rep" :tournament="tournament" :IconCharaList="IconCharaList"/>
+    <Casters :Rep="Rep" :tournament="tournament" />
   </v-layout>
 </template>
 
 <script>
 import StockIcon from '@/components/StockIcon.vue';
+import Casters from '@/components/Casters.vue';
 import FIGHTERS from '@/data/fighters.json';
 
 export default {
@@ -107,6 +109,7 @@ export default {
   },
   components: {
     StockIcon,
+    Casters,
   },
   data() {
     return {

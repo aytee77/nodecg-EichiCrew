@@ -64,7 +64,9 @@
     "winlose": "Winner/Loser",
     "gf_loser": "Grand Finals Winner/Loser",
     "update": "Update Info",
-    "color": "Team Color"
+    "color": "Team Color",
+    "casters": "Casters",
+    "CasterName": "Caster"
   },
   "DB":{
     "new": "Add new @:(players.player)'s @:(keywords.info)",
