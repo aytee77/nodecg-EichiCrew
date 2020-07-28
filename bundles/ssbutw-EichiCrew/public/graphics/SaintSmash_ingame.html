@@ -46,7 +46,7 @@
     nodecg.Replicant('tournament').on('change', (newValue, oldValue) => {
       // update tournament value here
       tournament = newValue;
-      document.getElementById('progress').innerText = tournament.progress;
+      document.getElementById('progress').innerText =  tournament.progress;
       document.getElementById('player1name').innerText = tournament.player[0].displayName;
       document.getElementById('player2name').innerText = tournament.player[1].displayName;
       document.getElementById('player1score').innerText = tournament.player[0].score;

@@ -19,14 +19,14 @@
             <v-flex xs6 class="pl-2 pr-2">
                 <v-text-field
                     :label="$t('score.CasterName')"
-                    v-model="Rep.Tournament.value.caster[0].displayName"
+                    v-model="caster1"
                     outline
                 ></v-text-field>
             </v-flex>
             <v-flex xs6 class="pl-2 pr-2">
                 <v-text-field
                     :label="$t('score.CasterName')"
-                    v-model="Rep.Tournament.value.caster[1].displayName"
+                    v-model="caster2"
                     outline
                 ></v-text-field>
             </v-flex>
@@ -41,11 +41,25 @@ export default {
     Rep: Object,
     tournament: Object,
   },
+  data() {
+    return {
+      caster1: '',
+      caster2: '',
+    };
+  },
+  watch: {
+      caster1: function handler(val) {
+          this.Rep.Tournament.value.caster1 = val;
+      },
+      caster2: function handler(val) {
+          this.Rep.Tournament.value.caster2 = val;
+      },
+  },
   methods: {
     swapCaster() {
-      [this.Rep.Tournament.value.caster[0],
-        this.Rep.Tournament.value.caster[1]] = [this.Rep.Tournament.value.caster[1],
-        this.Rep.Tournament.value.caster[0]];
+        const spareCaster = this.caster2;
+        this.$set(this, 'caster2', this.caster1);
+        this.$set(this, 'caster1', spareCaster);
     },
   },
 };
