@@ -40,8 +40,14 @@ export const REP_TOURNAMENT_DEFAULT = {
   final: 0,
   bo: 3,
   playerCount: 2,
-  caster1: '',
-  caster2: '',
+  caster: [{
+    displayName: '',
+    twitter: '',
+  },{
+    displayName: '',
+    twitter: '',
+  },
+  ],
   player: [{
     displayName: '',
     country: null,

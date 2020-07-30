@@ -22,11 +22,21 @@
                     v-model="caster1"
                     outline
                 ></v-text-field>
+                <v-text-field
+                    :label="$t('score.CasterTwitter')"
+                    v-model="caster1Twitter"
+                    outline
+                ></v-text-field>
             </v-flex>
             <v-flex xs6 class="pl-2 pr-2">
                 <v-text-field
                     :label="$t('score.CasterName')"
                     v-model="caster2"
+                    outline
+                ></v-text-field>
+                <v-text-field
+                    :label="$t('score.CasterTwitter')"
+                    v-model="caster2Twitter"
                     outline
                 ></v-text-field>
             </v-flex>
@@ -44,23 +54,42 @@ export default {
   data() {
     return {
       caster1: '',
+      caster1Twitter: '',
       caster2: '',
+      caster2Twitter: '',
     };
   },
   watch: {
       caster1: function handler(val) {
-          this.Rep.Tournament.value.caster1 = val;
+          this.Rep.Tournament.value.caster[0].displayName = val;
+      },
+      caster1Twitter: function handler(val) {
+          this.Rep.Tournament.value.caster[0].twitter = val;
       },
       caster2: function handler(val) {
-          this.Rep.Tournament.value.caster2 = val;
+          this.Rep.Tournament.value.caster[1].displayName = val;
+      },
+      caster2Twitter: function handler(val) {
+          this.Rep.Tournament.value.caster[1].twitter = val;
       },
   },
   methods: {
     swapCaster() {
         const spareCaster = this.caster2;
+        const spareCasterTwitter = this.caster2Twitter;
+
         this.$set(this, 'caster2', this.caster1);
         this.$set(this, 'caster1', spareCaster);
+
+        this.$set(this, 'caster2Twitter', this.caster1Twitter);
+        this.$set(this, 'caster1Twitter', spareCasterTwitter);
     },
+  },
+  created() {
+    this.caster1 = this.Rep.Tournament.value.caster[0].displayName;
+    this.caster1Twitter = this.Rep.Tournament.value.caster[0].twitter;
+    this.caster2 = this.Rep.Tournament.value.caster[1].displayName;
+    this.caster2Twitter = this.Rep.Tournament.value.caster[1].twitter;
   },
 };
 </script>

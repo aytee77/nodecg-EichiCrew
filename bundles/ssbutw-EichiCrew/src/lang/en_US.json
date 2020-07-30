@@ -66,7 +66,8 @@
     "update": "Update Info",
     "color": "Team Color",
     "casters": "Casters",
-    "CasterName": "Caster"
+    "CasterName": "Caster",
+    "CasterTwitter": "Twitter"
   },
   "DB":{
     "new": "Add new @:(players.player)'s @:(keywords.info)",
