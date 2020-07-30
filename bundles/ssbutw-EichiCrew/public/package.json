@@ -48,8 +48,8 @@
     "graphics": [
       {
         "file": "SaintSmash_ingame.html",
-        "width": 1280,
-        "height": 720,
+        "width": 1920,
+        "height": 1080,
         "singleInstance": false
       },
       {

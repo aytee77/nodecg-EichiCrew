@@ -1,5 +1,5 @@
 html{
-    background: url(../testSmashFooty.png) no-repeat;
+    /*background: url(../overlays/ingame.png) no-repeat;*/
     color: white;
     font-family: "Futura md bt";
     width: 1920px;
@@ -77,11 +77,11 @@ body{
 }
 
 .logo{
-    width: 129px;
+    width: 132px;
     position: absolute;
-    margin-left: -65px;
+    margin-left: -104px;
     left: 50%;
-    top: 968px
+    top: 963px;
 }
 
 .progressPlaque{
