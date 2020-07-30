@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="SaintSmash/fonts.css" />
+    <link rel="stylesheet" href="SaintSmash/SaintSmash_Castercam.css" />
+  </head>
+<body>
+  <div class="caster1">
+    <div class="casterName" id="c1Name" ></div>
+    <div class="casterTwitter" id="c1Twitter"></div>
+  </div>
+  <div class="caster2">
+    <div class="casterName" id="c2Name"></div>
+    <div class="casterTwitter" id="c2Twitter"></div>
+  </div>
+
+  <script>
+    var tournament;
+    nodecg.Replicant('tournament').on('change', (newValue, oldValue) => {
+      // update tournament value here
+      tournament = newValue;
+      document.getElementById('c1Name').innerText =  tournament.caster[0].displayName;
+      document.getElementById('c1Twitter').innerText = tournament.caster[0].twitter;
+      document.getElementById('c2Name').innerText = tournament.caster[1].displayName;
+      document.getElementById('c2Twitter').innerText = tournament.caster[1].twitter;
+    });
+  </script>
+</body>
+</html>

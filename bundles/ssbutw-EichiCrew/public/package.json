@@ -53,6 +53,12 @@
         "singleInstance": false
       },
       {
+        "file": "SaintSmash_Castercam.html",
+        "width": 1920,
+        "height": 1080,
+        "singleInstance": false
+      },
+      {
         "file": "UMEBURA-light.html",
         "width": 1280,
         "height": 720,
