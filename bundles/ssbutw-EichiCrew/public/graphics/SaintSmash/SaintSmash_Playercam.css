@@ -1,0 +1,66 @@
+html{
+    /*background: url(../overlays/Castercam.png) no-repeat;*/
+    color: white;
+    font-family: "Futura md bt";
+    width: 1920px;
+    height: 1080px;
+}
+
+.Main{
+    position: absolute;
+    left: 0px;
+    top: 857px;
+}
+
+.Progress{
+    height: 43px;
+    background-color: #2c2d2c;
+    margin-bottom: 7px;
+}
+.Progress img{
+    float: right;
+}
+
+#Progress{
+    float: left;
+    min-width: 407px;
+    text-align: right;
+    line-height: 43px;
+    box-sizing: border-box;
+    padding-right: 35px;
+
+    font-family: "Futura Hv BT";
+    font-size: 31px;
+}
+
+.p1, .p2{
+    margin-bottom: 7px;
+    height: 31px;
+}
+
+.pName{
+    display: block;
+    min-width: 383px;
+    background-color: #2c2d2c;
+    text-align: right;
+    height: 31px;
+    float: left;
+    line-height: 31px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.score{
+    float: right;
+    width: 31px;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+}
+
+#p1Score{
+    background-color: #e01c33;
+}
+#p2Score{
+    background-color: #3e7fcb;
+}

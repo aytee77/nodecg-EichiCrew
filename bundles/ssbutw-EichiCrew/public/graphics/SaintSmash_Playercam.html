@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="SaintSmash/fonts.css" />
+    <link rel="stylesheet" href="SaintSmash/SaintSmash_Playercam.css" />
+  </head>
+<body>
+  <div class="Main">
+    <div class="Progress">
+      <div id="Progress"></div>
+      <img src="SaintSmash/PlaqueWhite_Tall.png">
+    </div>
+    <div class="p1">
+      <div class="pName" id="p1Name"></div>
+      <div class="score" id="p1Score"></div>
+    </div>
+    <div class="p2">
+      <div class="pName" id="p2Name"></div>
+      <div class="score" id="p2Score"></div>
+    </div>
+  </div>
+
+
+  <script>
+    var tournament;
+    nodecg.Replicant('tournament').on('change', (newValue, oldValue) => {
+      // update tournament value here
+      tournament = newValue;
+      document.getElementById('Progress').innerText = tournament.progress;
+      document.getElementById('p1Name').innerText = tournament.player[0].displayName;
+      document.getElementById('p1Score').innerText = tournament.player[0].score;
+      document.getElementById('p2Name').innerText = tournament.player[1].displayName;
+      document.getElementById('p2Score').innerText = tournament.player[1].score;
+    });
+  </script>
+</body>
+</html>
