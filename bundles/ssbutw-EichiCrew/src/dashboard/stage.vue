@@ -132,16 +132,20 @@ export default {
       if (!this.stages.counterPick) {
         switch (this.state.banNumber) {
           case 0:
-            return this.$t('stages.ban_1', ['1', '2', '2']);
+            return this.$t('stages.ban_1', ['1', '3', '3']);
           case 1:
-            return this.$t('stages.ban_1', ['1', '2', '1']);
+            return this.$t('stages.ban_1', ['1', '3', '2']);
           case 2:
-            return this.$t('stages.ban_2', ['2', '3', '3']);
+            return this.$t('stages.ban_1', ['1', '3', '1']);
           case 3:
-            return this.$t('stages.ban_2', ['2', '3', '2']);
+            return this.$t('stages.ban_2', ['2', '4', '4']);
           case 4:
-            return this.$t('stages.ban_2', ['2', '3', '1']);
+            return this.$t('stages.ban_2', ['2', '4', '3']);
           case 5:
+            return this.$t('stages.ban_2', ['2', '4', '2']);
+          case 6:
+            return this.$t('stages.ban_2', ['2', '4', '1']);
+          case 7:
             return this.$t('stages.ban_1', ['1', '1']);
           default:
             return '';
@@ -181,9 +185,9 @@ export default {
       }
       if (!(this.stages.counterPick) && category === 'st') {
         this.state.banNumber += 1;
-        if (this.state.banNumber < 6) {
+        if (this.state.banNumber < 8) {
           this.Rep.Stages.value.banPick.ban.push(stage);
-        } else if (this.state.banNumber === 6) {
+        } else if (this.state.banNumber === 8) {
           this.stages.banPick.ban.push(stage);
           this.Rep.Stages.value.banPick.ban.push(stage);
           this.stages.st.forEach((element) => {

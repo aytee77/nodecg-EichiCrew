@@ -93,8 +93,8 @@ export const COLOR_DEFAULT = [
 
 export const STAGES_DEFAULT = {
   counterPick: false,
-  st: ['1h', '3h', '44h', '40h', '39h'],
-  cp: ['62h', '42h', '85h', '19h', '79h', '37h'],
+  st: ['1h', '3h', '40h', '44h', '85h', '110h', '79h', '39h', '19h'],
+  cp: [],
   banPick: {
     ban: [],
     pick: [],
@@ -112,7 +112,7 @@ export const STAGES = [
   'Balloon Fight', 'Living Room', 'Find Mii', 'Tomodachi Life', 'PictoChat 2', 'Mushroom Kingdom U', 'Mario Galaxy', 'Mario Circuit', 'Skyloft', 'The Great Cave Offensive',
   'Kalos Pokemon League', 'Coliseum', 'Flat Zone X', 'Palutena\'s Temple', 'Gamer', 'Garden of Hope', 'Town and City', 'Wii Fit Studio', 'Boxing Ring', 'Gaur Plain', 'Duck Hunt',
   'Wrecking Crew', 'Pilotwings', 'Wuhu Island', 'Windy Hill Zone', 'Wily Castle', 'PAC-LAND', 'Super Mario Maker', 'Suzaku Castle', 'Midgar', 'Umbra Clock Tower',
-  'New Donk City Hall', 'Great Plateau Tower', 'Moray Towers', 'Dracula\'s Castle',
+  'New Donk City Hall', 'Great Plateau Tower', 'Moray Towers', 'Dracula\'s Castle', "Mementos", "Yggdrasil's Altar", "Spiral Mountain", "King of Fighters Stadium", "Garreg Mach Monastery", "Spring Stadium", "Small Battlefield"
 ];
 
 export const STAGES_JP = [
@@ -123,5 +123,6 @@ export const STAGES_JP = [
   'テンガンざん やりのはしら', '75m', 'マリオブラザーズ', 'エレクトロプランクトン', 'グリーンヒルゾーン', '3Dランド', '野原', 'ペーパーマリオ', 'ゲルドの谷', '汽車', 'プププランド GB', 'イッシュポケモンリーグ', 'プリズムタワー',
   'ミュートシティ SFC', 'マジカント', 'フェリア闘技場', '初期化爆弾の森', 'コトブキランド', 'バルーンファイト', '子犬がいるリビング', 'すれちがい伝説', 'トモダチコレクション', 'ピクトチャット2', 'マリオUワールド', 'マリオギャラクシー',
   'マリオサーキット', 'スカイロフト', '洞窟大作戦', 'カロスポケモンリーグ', '闘技場', 'フラットゾーンX', 'エンジェランド', 'ゲーマー', '再会の花園', '村と街', 'Wii Fit スタジオ', '特設リング', 'ガウル平原', 'ダックハント', 'レッキングクルー',
-  'パイロットウイングス', 'ウーフーアイランド', 'ウィンディヒル', 'ワイリー基地', 'パックランド', 'スーパーマリオメーカー', '朱雀城', 'ミッドガル', 'アンブラの時計塔', 'ニュードンク市庁舎', '始まりの塔', 'タチウオパーキング', 'ドラキュラ城',
+  'パイロットウイングス', 'ウーフーアイランド', 'ウィンディヒル', 'ワイリー基地', 'パックランド', 'スーパーマリオメーカー', '朱雀城', 'ミッドガル', 'アンブラの時計塔', 'ニュードンク市庁舎', '始まりの塔', 'タチウオパーキング', 'ドラキュラ城', 
+  "Yggdrasil's Altar", "Spiral Mountain", "King of Fighters Stadium", "Garreg Mach Monastery", "Spring Stadium", "Small Battlefield"
 ];

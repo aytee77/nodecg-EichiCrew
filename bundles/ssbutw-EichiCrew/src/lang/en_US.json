@@ -88,7 +88,7 @@
     "starter": "Starter",
     "counter": "Counter",
     "banspage": "Use Ban.Pages URL Parameter/Format to import your stage sets",
-    "ban_1": "Player #{0} Bans {1} Stage",
+    "ban_1": "Player #{0} Bans {1} Stage (Remains: {2})",
     "ban_2": "Player #{0} Bans {1} Stages (Remains: {2})",
     "pick_1": "Player #{0} Picks {1} Stage",
     "set": "Set Stages"
