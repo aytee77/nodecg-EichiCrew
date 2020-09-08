@@ -23,6 +23,29 @@
       document.getElementById('c1Twitter').innerText = tournament.caster[0].twitter;
       document.getElementById('c2Name').innerText = tournament.caster[1].displayName;
       document.getElementById('c2Twitter').innerText = tournament.caster[1].twitter;
+
+      if(!tournament.caster[0].displayName){
+        document.getElementById('c1Name').classList.add("hide");
+      }else{
+        document.getElementById('c1Name').classList.remove("hide");
+      }
+      if(!tournament.caster[0].twitter){
+        document.getElementById('c1Twitter').classList.add("hide");
+      }else{
+        document.getElementById('c1Twitter').classList.remove("hide");
+      }
+
+      if(!tournament.caster[1].displayName){
+        document.getElementById('c2Name').classList.add("hide");
+      }else{
+        document.getElementById('c2Name').classList.remove("hide");
+      }
+      if(!tournament.caster[1].twitter){
+        document.getElementById('c2Twitter').classList.add("hide");
+      }else{
+        document.getElementById('c2Twitter').classList.remove("hide");
+      }
+
     });
   </script>
 </body>
